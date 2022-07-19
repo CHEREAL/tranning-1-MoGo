@@ -149,6 +149,7 @@ hr {
   vertical-align: top;
   font-size: 14px;
   font-weight: 700;
+  /* explore */
   transition: background 0.1s linear, color 0.1s linear;
 }
 .btn:hover {
@@ -353,7 +354,14 @@ hr {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
 }
 .divices__item {
   display: block;
+}
+.divices__item--iphone {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 1;
 }
