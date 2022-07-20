@@ -554,3 +554,10 @@ hr {
 .social__item:last-child {
   border-right: 0;
 }
+
+/* logos*/
+
+.logos {
+  justify-content: space-between;
+  display: flex;
+}
