@@ -560,4 +560,31 @@ hr {
 .logos {
   justify-content: space-between;
   display: flex;
+  align-items: center;
+}
+/* Works*/
+.works {
+  display: flex;
+}
+
+.works__col {
+  flex: 1 1 0;
+}
+.works__item {
+  position: relative;
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+.works__item:hover .works__img {
+  opacity: 0.1;
+}
+.works__img {
+  transition: opacity 0.2s linear;
+}
+.works__info {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
+  z-index: 1;
 }
