@@ -586,5 +586,5 @@ hr {
   top: 50%;
   left: 0;
   transform: translate3d(0, -50%, 0);
-  z-index: 0;
+  z-index: 1;
 }
