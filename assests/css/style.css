@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:300i,wght@400;700&display=swap");
+
 body {
   margin: 0;
 
@@ -79,7 +81,6 @@ hr {
   content: "";
   display: block;
   width: 60px;
-
   height: 3px;
   margin: 60px auto;
   background-color: #fff;
@@ -230,7 +231,6 @@ hr {
   vertical-align: top;
   font-size: 14px;
   font-weight: 700;
-  /* explore */
   transition: background 0.1s linear, color 0.1s linear;
 }
 .btn:hover {
@@ -298,6 +298,7 @@ hr {
   background: #e6e6e6 url(../images/map.jpg) no-repeat center / cover;
 }
 .section--clients {
+  background-size: cover;
   background: url(../images/clients-background.jpg.jpg) no-repeat center;
 }
 .section--devices {
@@ -340,12 +341,10 @@ hr {
 
 .card {
   margin: 80px -15px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
 }
 .card__item {
-  width: 33.3%;
   padding: 0 15px;
 }
 .card__inner {
@@ -362,10 +361,15 @@ hr {
   opacity: 1;
 }
 .card__img {
+  overflow: hidden;
+  position: relative;
+  min-height: 250px;
   background: linear-gradient(to bottom, #f38181, #fce38a);
   transition: transform 0.2s linear;
 }
 .card__img img {
+  position: absolute;
+  object-fit: cover;
   display: block;
   min-width: 100%;
   height: auto;
@@ -479,7 +483,7 @@ hr {
 }
 .divices__item {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .divices__item--iphone {
@@ -1121,6 +1125,9 @@ hr {
     padding-bottom: 30px;
     border: 0;
   }
+  .stat__item:last-child {
+    border: none;
+  }
   .stat {
     justify-content: center;
   }
@@ -1232,7 +1239,8 @@ hr {
   }
   /* Card*/
   .card {
-    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
     margin-top: 50px;
   }
   .card__item {
