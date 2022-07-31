@@ -216,6 +216,7 @@ hr {
 }
 .section--clients {
   background: url(../images/clients-background.jpg.jpg) no-repeat center;
+  background-size: cover;
 }
 .section--devices {
   margin-bottom: 40px;
